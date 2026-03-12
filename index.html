@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,6 +23,7 @@
         <a href="#how-it-works">How It Works</a>
         <a href="#privacy">Privacy</a>
         <a href="#brief">Weekly Brief</a>
+        <a href="#pricing">Pricing</a>
         <a href="#security">Security</a>
         <a href="#signup" class="btn btn--sm">Get Early Access</a>
       </div>
@@ -338,6 +339,98 @@
     </div>
   </section>
 
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-label">Pricing</div>
+      <h2 class="section-title">One price. No surprises.</h2>
+
+      <div class="pricing__toggle">
+        <span class="pricing__toggle-label pricing__toggle-label--active" data-plan="monthly">Monthly</span>
+        <button class="pricing__toggle-switch" aria-label="Toggle billing period">
+          <span class="pricing__toggle-knob"></span>
+        </button>
+        <span class="pricing__toggle-label" data-plan="yearly">Yearly <span class="pricing__toggle-badge">2 months free</span></span>
+      </div>
+
+      <div class="pricing__grid">
+
+        <div class="pricing__card pricing__card--primary">
+          <div class="pricing__popular">Most Popular</div>
+          <h3 class="pricing__card-title">Juniper Friends</h3>
+          <div class="pricing__price">
+            <span class="pricing__amount" id="pricing-amount">$8</span>
+            <span class="pricing__period">/mo</span>
+          </div>
+          <p class="pricing__billed" id="pricing-billed"></p>
+          <ul class="pricing__features">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Unlimited contacts
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Natural language logging
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Weekly briefs with draft messages
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Smart reminders and nudges
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Private, isolated database
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Web dashboard and relationship map
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Export anytime, no lock-in
+            </li>
+          </ul>
+          <a href="#signup" class="btn btn--lg pricing__cta">Join the Waitlist</a>
+        </div>
+
+        <div class="pricing__card">
+          <h3 class="pricing__card-title">Bring Your Own Key</h3>
+          <div class="pricing__price">
+            <span class="pricing__amount">Free</span>
+          </div>
+          <p class="pricing__billed pricing__billed--static">For developers and tinkerers</p>
+          <ul class="pricing__features">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Everything in the paid plan
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              You provide your own Anthropic API key
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              You pay Anthropic directly for usage
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Same private, isolated database
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Full data export, no lock-in
+            </li>
+          </ul>
+          <a href="#signup" class="btn btn--lg btn--ghost pricing__cta">Join the Waitlist</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- SECURITY -->
   <section class="security" id="security">
     <div class="container">
@@ -549,7 +642,28 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.card, .step, .chat__msg, .brief__layout, .privacy__point').forEach(function(el) {
+    // Pricing toggle
+    (function() {
+      var toggle = document.querySelector('.pricing__toggle-switch');
+      var knob = document.querySelector('.pricing__toggle-knob');
+      var labels = document.querySelectorAll('.pricing__toggle-label');
+      var amount = document.getElementById('pricing-amount');
+      var billed = document.getElementById('pricing-billed');
+      var isYearly = false;
+
+      if (!toggle) return;
+
+      toggle.addEventListener('click', function() {
+        isYearly = !isYearly;
+        toggle.classList.toggle('pricing__toggle-switch--active', isYearly);
+        labels[0].classList.toggle('pricing__toggle-label--active', !isYearly);
+        labels[1].classList.toggle('pricing__toggle-label--active', isYearly);
+        amount.textContent = isYearly ? '$6' : '$8';
+        billed.textContent = isYearly ? 'Billed yearly at $72' : '';
+      });
+    })();
+
+    document.querySelectorAll('.card, .step, .chat__msg, .brief__layout, .privacy__point, .pricing__card').forEach(function(el) {
       el.classList.add('animate');
       observer.observe(el);
     });
