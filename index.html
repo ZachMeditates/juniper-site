@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juniper &mdash; Your Friendships, Handled</title>
+  <title>Juniper Friends &mdash; Remember the People Who Matter</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=7" />
 </head>
 <body>
 
@@ -16,12 +16,14 @@
     <div class="nav__inner">
       <a href="#" class="nav__logo">
         <svg class="nav__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L7.5 9h2L5 16h14l-4.5-7h2L12 2z"/><rect x="10.5" y="16" width="3" height="4" rx=".5"/></svg>
-        Juniper
+        Juniper Friends
       </a>
       <div class="nav__links">
         <a href="#features">Features</a>
         <a href="#how-it-works">How It Works</a>
+        <a href="#privacy">Privacy</a>
         <a href="#brief">Weekly Brief</a>
+        <a href="#security">Security</a>
         <a href="#signup" class="btn btn--sm">Get Early Access</a>
       </div>
       <div class="nav__right">
@@ -39,10 +41,26 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero__glow"></div>
+    <div class="hero__infinity" aria-hidden="true">
+      <svg viewBox="0 0 200 80" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M60 40c-16 0-28-10-28-20S44 0 60 0c10 0 18 8 28 20s18 20 28 20c16 0 28-10 28-20S132 0 116 0c-10 0-18 8-28 20S70 40 60 40z" transform="translate(12 20)"/></svg>
+    </div>
     <div class="container">
-      <div class="hero__badge">Personal Friend CRM</div>
-      <h1 class="hero__title">Your friendships,<br /><span class="gradient-text">handled.</span></h1>
-      <p class="hero__sub">Juniper lives in Telegram and remembers everything about the people you care about. Birthdays, life updates, who you owe a call. Just text naturally and let Juniper keep score.</p>
+      <div class="hero__badge">Personal CRM for Real Friendships</div>
+
+      <div class="hero__personas" role="tablist" aria-label="Choose your situation">
+        <button class="persona-tab persona-tab--active" role="tab" aria-selected="true" data-persona="everyone">Everyone</button>
+        <button class="persona-tab" role="tab" aria-selected="false" data-persona="parents">New Parents</button>
+        <button class="persona-tab" role="tab" aria-selected="false" data-persona="city">New City</button>
+        <button class="persona-tab" role="tab" aria-selected="false" data-persona="freshmen">Freshmen</button>
+        <button class="persona-tab" role="tab" aria-selected="false" data-persona="pro">Busy Pro</button>
+        <button class="persona-tab" role="tab" aria-selected="false" data-persona="distance">Long Distance</button>
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__title" id="hero-title">You're not a bad friend.<br /><span class="gradient-text">You're just busy.</span></h1>
+        <p class="hero__sub" id="hero-sub">You remember their kids' names but forget to text back. You care about these people. Juniper Friends makes sure it shows. Your data stays private, stored in isolation, and never shared.</p>
+      </div>
+
       <div class="hero__cta">
         <a href="#signup" class="btn btn--lg">Get Early Access</a>
         <a href="#how-it-works" class="btn btn--lg btn--ghost">See How It Works</a>
@@ -58,18 +76,23 @@
   <section class="strip">
     <div class="container strip__inner">
       <div class="strip__item">
-        <strong>Zero apps to install</strong>
-        <span>Lives in Telegram</span>
+        <strong>Just text it</strong>
+        <span>No forms, no menus, no learning curve</span>
       </div>
-      <div class="strip__sep"></div>
+      <div class="strip__sep"><svg viewBox="0 0 48 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M14 10c-4 0-7-3-7-5s3-5 7-5c3 0 5 2 7 5s4 5 7 5c4 0 7-3 7-5s-3-5-7-5c-3 0-5 2-7 5s-4 5-7 5z" transform="translate(3 5)"/></svg></div>
       <div class="strip__item">
-        <strong>AI-powered</strong>
-        <span>Natural language, no commands</span>
+        <strong>Understands you</strong>
+        <span>Natural language, not slash commands</span>
       </div>
-      <div class="strip__sep"></div>
+      <div class="strip__sep"><svg viewBox="0 0 48 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M14 10c-4 0-7-3-7-5s3-5 7-5c3 0 5 2 7 5s4 5 7 5c4 0 7-3 7-5s-3-5-7-5c-3 0-5 2-7 5s-4 5-7 5z" transform="translate(3 5)"/></svg></div>
       <div class="strip__item">
         <strong>Web dashboard</strong>
-        <span>Visual relationship map</span>
+        <span>Visual relationship map and timeline</span>
+      </div>
+      <div class="strip__sep"><svg viewBox="0 0 48 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M14 10c-4 0-7-3-7-5s3-5 7-5c3 0 5 2 7 5s4 5 7 5c4 0 7-3 7-5s-3-5-7-5c-3 0-5 2-7 5s-4 5-7 5z" transform="translate(3 5)"/></svg></div>
+      <div class="strip__item">
+        <strong>Private by design</strong>
+        <span>Your data, nobody else's</span>
       </div>
     </div>
   </section>
@@ -78,7 +101,7 @@
   <section class="features" id="features">
     <div class="container">
       <div class="section-label">Features</div>
-      <h2 class="section-title">Everything you need to<br />never drop the ball again</h2>
+      <h2 class="section-title">Everything you need to<br />be the friend who remembers</h2>
       <div class="features__grid">
 
         <div class="card">
@@ -86,7 +109,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           </div>
           <h3>Natural Language Logging</h3>
-          <p>Just text like you'd text a friend. "Had coffee with Sarah, she's thinking about moving to Austin." Juniper extracts the who, what, when, and life updates automatically.</p>
+          <p>Just text like you'd text a friend. "Had coffee with Sarah, she's thinking about moving to Austin." Juniper Friends extracts the who, what, when, and life updates automatically.</p>
         </div>
 
         <div class="card">
@@ -94,7 +117,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <h3>Smart Reminders</h3>
-          <p>"Remind me to check in with Mike next week." Set it and forget it. Juniper will surface it when it matters, in your brief and on your dashboard.</p>
+          <p>"Remind me to check in with Mike next week." Set it and forget it. Juniper Friends will surface it when it matters. Which your brain was definitely going to do on its own. Definitely.</p>
         </div>
 
         <div class="card">
@@ -102,7 +125,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <h3>Relationship Tiers</h3>
-          <p>Organize your people into inner circle, close friends, and orbit. Juniper tracks contact frequency and flags when someone's overdue for a check-in.</p>
+          <p>Organize your people into inner circle, close friends, and orbit. Juniper Friends tracks contact frequency and flags when someone's overdue. Think of it as a friendship smoke detector.</p>
         </div>
 
         <div class="card">
@@ -110,7 +133,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </div>
           <h3>Semantic Search</h3>
-          <p>"Who was thinking about changing jobs?" Search by meaning, not keywords. Juniper understands context and finds the right people even from fuzzy queries.</p>
+          <p>"Who was thinking about changing jobs?" Search by meaning, not keywords. Juniper Friends understands context and finds the right people even from fuzzy queries.</p>
         </div>
 
         <div class="card">
@@ -126,12 +149,38 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
           </div>
           <h3>Full Undo Support</h3>
-          <p>Logged the wrong thing? Merged the wrong contacts? Every action is reversible. Just say "undo" and Juniper rolls it back, no questions asked.</p>
+          <p>Logged the wrong thing? Merged the wrong contacts? Every action is reversible. Just say "undo" and Juniper Friends rolls it back, no questions asked.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <h3>Export Anytime</h3>
+          <p>Your data belongs to you. Export everything as JSON or CSV whenever you want. Import contacts from a spreadsheet just as easily. No lock-in, no hostage situations.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Privacy First</h3>
+          <p>Your contact data is never sold and never used to train anything. Every account is sandboxed in its own database. We built this for trust, not ads.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          </div>
+          <h3>Birthday Tracking</h3>
+          <p>Never be the friend who texts "happy belated" again. Juniper Friends flags upcoming birthdays in your weekly brief and gives you time to reach out before the day passes.</p>
         </div>
 
       </div>
     </div>
   </section>
+
+  <div class="infinity-divider infinity-divider--lg" aria-hidden="true"><svg viewBox="0 0 80 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M24 16c-8 0-14-5-14-8s6-8 14-8c5 0 10 4 14 8s9 8 14 8c8 0 14-5 14-8s-6-8-14-8c-5 0-10 4-14 8s-9 8-14 8z" transform="translate(2 8)"/></svg></div>
 
   <!-- HOW IT WORKS -->
   <section class="how" id="how-it-works">
@@ -141,20 +190,63 @@
       <div class="how__steps">
         <div class="step">
           <div class="step__num">01</div>
-          <h3>Text Juniper</h3>
-          <p>Open Telegram and talk to Juniper like a friend. Add people, log hangouts, set reminders. No forms, no menus, just conversation.</p>
+          <h3>Text Juniper Friends</h3>
+          <p>Open Telegram and talk to Juniper Friends like you'd talk to a person. Add people, log hangouts, set reminders. No forms, no menus, just say what happened.</p>
         </div>
-        <div class="step__line"></div>
+        <div class="step__line"><svg viewBox="0 0 48 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M14 10c-4 0-7-3-7-5s3-5 7-5c3 0 5 2 7 5s4 5 7 5c4 0 7-3 7-5s-3-5-7-5c-3 0-5 2-7 5s-4 5-7 5z" transform="translate(3 5)"/></svg></div>
         <div class="step">
           <div class="step__num">02</div>
-          <h3>Juniper Remembers</h3>
-          <p>Every detail gets parsed, organized, and stored. Life updates, birthdays, jobs, interests. Juniper builds a living profile of every person in your world.</p>
+          <h3>Juniper Friends Remembers</h3>
+          <p>Every detail gets parsed, organized, and stored in your own isolated database. Life updates, birthdays, jobs, interests. Juniper Friends builds a living profile of every person in your world.</p>
         </div>
-        <div class="step__line"></div>
+        <div class="step__line"><svg viewBox="0 0 48 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M14 10c-4 0-7-3-7-5s3-5 7-5c3 0 5 2 7 5s4 5 7 5c4 0 7-3 7-5s-3-5-7-5c-3 0-5 2-7 5s-4 5-7 5z" transform="translate(3 5)"/></svg></div>
         <div class="step">
           <div class="step__num">03</div>
           <h3>Stay Connected</h3>
-          <p>Get a weekly brief every Monday with who to reach out to, ready-to-send messages, upcoming birthdays, and reminders. Copy, paste, send.</p>
+          <p>Get a weekly brief every Monday with who to reach out to, draft messages you can copy and send, upcoming birthdays, and reminders you forgot you set.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="infinity-divider infinity-divider--lg" aria-hidden="true"><svg viewBox="0 0 80 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M24 16c-8 0-14-5-14-8s6-8 14-8c5 0 10 4 14 8s9 8 14 8c8 0 14-5 14-8s-6-8-14-8c-5 0-10 4-14 8s-9 8-14 8z" transform="translate(2 8)"/></svg></div>
+
+  <!-- PRIVACY -->
+  <section class="privacy" id="privacy">
+    <div class="container">
+      <div class="section-label">Privacy</div>
+      <h2 class="section-title">Your friends' stories<br />are not ours to sell</h2>
+      <p class="privacy__intro">You're telling Juniper Friends about the people you love. Their birthdays, their jobs, what they're going through. That's sacred. We treat it that way.</p>
+
+      <div class="privacy__points">
+        <div class="privacy__point">
+          <div class="privacy__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg>
+          </div>
+          <div class="privacy__text">
+            <h3>Your own database</h3>
+            <p>Every account is isolated in its own storage. Not rows in a shared table. Your data physically cannot mix with anyone else's.</p>
+          </div>
+        </div>
+
+        <div class="privacy__point">
+          <div class="privacy__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg>
+          </div>
+          <div class="privacy__text">
+            <h3>No training, no selling, no sharing</h3>
+            <p>Your data is never used to train models. Never sold to advertisers. Never shared with third parties. We built a business, not a data mine.</p>
+          </div>
+        </div>
+
+        <div class="privacy__point">
+          <div class="privacy__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </div>
+          <div class="privacy__text">
+            <h3>Export everything, anytime</h3>
+            <p>Your data belongs to you. Download it all as JSON or CSV. If you leave, it leaves with you. No lock-in, no exit interviews.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -164,7 +256,7 @@
   <section class="demo">
     <div class="container">
       <div class="section-label">In Action</div>
-      <h2 class="section-title">It feels like texting a friend<br />who never forgets anything</h2>
+      <h2 class="section-title">It feels like texting a friend<br />with a suspiciously good memory</h2>
       <div class="chat">
         <div class="chat__msg chat__msg--user">
           <div class="chat__bubble">Had lunch with Sarah yesterday. She got promoted to Senior Engineer and is thinking about moving to Denver.</div>
@@ -197,14 +289,16 @@
     </div>
   </section>
 
+  <div class="infinity-divider infinity-divider--lg" aria-hidden="true"><svg viewBox="0 0 80 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M24 16c-8 0-14-5-14-8s6-8 14-8c5 0 10 4 14 8s9 8 14 8c8 0 14-5 14-8s-6-8-14-8c-5 0-10 4-14 8s-9 8-14 8z" transform="translate(2 8)"/></svg></div>
+
   <!-- WEEKLY BRIEF -->
   <section class="brief" id="brief">
     <div class="container">
       <div class="brief__layout">
         <div class="brief__text">
           <div class="section-label">Weekly Brief</div>
-          <h2 class="section-title" style="text-align:left">Monday mornings,<br />sorted</h2>
-          <p>Every Monday at 8am, Juniper drops a brief in your Telegram with everything you need to stay on top of your relationships. Who's overdue, whose birthday is coming up, and draft messages you can copy and send in seconds.</p>
+          <h2 class="section-title" style="text-align:left">Monday mornings,<br />covered</h2>
+          <p>Every Monday at 8am, Juniper Friends drops a brief in your Telegram with everything you need to stay on top of your relationships. Who's overdue, whose birthday is coming up, and draft messages you can copy and send in seconds.</p>
           <ul class="brief__list">
             <li>
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -250,17 +344,63 @@
     </div>
   </section>
 
+  <!-- SECURITY -->
+  <section class="security" id="security">
+    <div class="container">
+      <div class="section-label">Security</div>
+      <h2 class="section-title">The boring but<br />important stuff</h2>
+      <p class="security__sub">You're trusting Juniper Friends with the names, birthdays, and life details of the people you care about. That trust comes with responsibility. Here's how we handle it.</p>
+      <div class="security__grid">
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h3>Isolated Storage</h3>
+          <p>Every account gets its own database, completely separate from every other user. There is no shared table, no shared query, no way for data to cross over.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Hardened by Default</h3>
+          <p>Security headers on every response. Clickjacking protection, content injection prevention, and strict referrer policies baked in from day one.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="23" y1="13" x2="17" y2="13"/></svg>
+          </div>
+          <h3>No Data Sharing</h3>
+          <p>Your contact data is never sold, never shared, never used to train models. It exists for one purpose: helping you be a better friend. Period.</p>
+        </div>
+
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.78 7.78 5.5 5.5 0 0 1 7.78-7.78zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+          </div>
+          <h3>Secure Sessions</h3>
+          <p>Passwords hashed with bcrypt. Sessions stored in secure, httponly cookies that can't be read by scripts. Rate limiting on authentication to block brute force attacks.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="infinity-divider infinity-divider--lg" aria-hidden="true"><svg viewBox="0 0 80 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M24 16c-8 0-14-5-14-8s6-8 14-8c5 0 10 4 14 8s9 8 14 8c8 0 14-5 14-8s-6-8-14-8c-5 0-10 4-14 8s-9 8-14 8z" transform="translate(2 8)"/></svg></div>
+
   <!-- CTA / SIGNUP -->
   <section class="cta" id="signup">
     <div class="container">
       <div class="cta__glow"></div>
       <h2 class="section-title">Stop forgetting.<br />Start showing up.</h2>
-      <p class="cta__sub">Juniper is launching soon. Drop your email and be the first to know.</p>
+      <p class="cta__sub">Juniper Friends is launching soon. Drop your email and stop relying on your increasingly unreliable brain.</p>
       <form class="cta__form" onsubmit="handleSignup(event)">
         <input type="email" placeholder="you@example.com" required class="cta__input" />
         <button type="submit" class="btn btn--lg">Join the Waitlist</button>
       </form>
-      <p class="cta__fine">Free to use during early access. No spam, ever.</p>
+      <p class="cta__fine">Free to use during early access. No spam, ever. Your email is stored securely and never shared.</p>
       <div class="cta__success" id="cta-success">
         You're on the list. We'll be in touch.
       </div>
@@ -272,54 +412,109 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <svg class="footer__icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L7.5 9h2L5 16h14l-4.5-7h2L12 2z"/><rect x="10.5" y="16" width="3" height="4" rx=".5"/></svg>
-        Juniper
+        Juniper Friends
       </div>
-      <div class="footer__copy">&copy; 2026 Juniper. All rights reserved.</div>
+      <div class="footer__copy">&copy; 2026 Juniper Friends. All rights reserved.</div>
     </div>
   </footer>
 
   <script>
     // Theme toggle
     function toggleTheme() {
-      const html = document.documentElement;
-      const current = html.getAttribute('data-theme');
-      const next = current === 'light' ? 'dark' : 'light';
+      var html = document.documentElement;
+      var current = html.getAttribute('data-theme');
+      var next = current === 'light' ? 'dark' : 'light';
       html.setAttribute('data-theme', next);
       localStorage.setItem('juniper-theme', next);
     }
 
     // Apply saved theme on load
     (function() {
-      const saved = localStorage.getItem('juniper-theme');
+      var saved = localStorage.getItem('juniper-theme');
       if (saved) {
         document.documentElement.setAttribute('data-theme', saved);
       }
     })();
 
+    // Persona tabs
+    (function() {
+      var personas = {
+        everyone: {
+          title: 'You\'re not a bad friend.<br /><span class="gradient-text">You\'re just busy.</span>',
+          sub: 'You remember their kids\' names but forget to text back. You care about these people. Juniper Friends makes sure it shows. Your data stays private, stored in isolation, and never shared.'
+        },
+        parents: {
+          title: 'Having kids changes everything.<br /><span class="gradient-text">Your friendships don\'t have to.</span>',
+          sub: 'Sleep deprivation took your car keys, your train of thought, and apparently your ability to remember that your best friend\'s birthday was last Tuesday. Juniper Friends remembers what you can\'t right now.'
+        },
+        city: {
+          title: 'New city, new people,<br /><span class="gradient-text">zero context.</span>',
+          sub: 'You\'re meeting someone new every week and forgetting half of them by Friday. Where they work, how you met, what they said about that trail. Juniper Friends keeps track so you don\'t show up blank.'
+        },
+        freshmen: {
+          title: 'You\'ll meet more people this semester<br /><span class="gradient-text">than the next ten years combined.</span>',
+          sub: 'Orientation week, floor mates, study groups, that person from the party who was actually great. It\'s a blur. Hold onto the connections before they fade into "I think we had a class together."'
+        },
+        pro: {
+          title: 'Your calendar is full.<br /><span class="gradient-text">Your friendships shouldn\'t be empty.</span>',
+          sub: 'Back to back meetings, networking events, happy hours. You\'re surrounded by people all day but can\'t remember the last time you called your actual friends. Juniper Friends watches the gaps so you don\'t have to.'
+        },
+        distance: {
+          title: 'Your friends moved.<br /><span class="gradient-text">Your friendship doesn\'t have to.</span>',
+          sub: 'After college, after the move, after the job change. Everyone scattered. Juniper Friends tracks who you haven\'t heard from, what\'s going on in their life, and when it\'s been too long.'
+        }
+      };
+
+      var tabs = document.querySelectorAll('.persona-tab');
+      var titleEl = document.getElementById('hero-title');
+      var subEl = document.getElementById('hero-sub');
+      var content = document.querySelector('.hero__content');
+
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          var key = this.getAttribute('data-persona');
+          var data = personas[key];
+          if (!data) return;
+
+          tabs.forEach(function(t) {
+            t.classList.remove('persona-tab--active');
+            t.setAttribute('aria-selected', 'false');
+          });
+          this.classList.add('persona-tab--active');
+          this.setAttribute('aria-selected', 'true');
+
+          content.classList.add('hero__content--fading');
+          setTimeout(function() {
+            titleEl.innerHTML = data.title;
+            subEl.innerHTML = data.sub;
+            content.classList.remove('hero__content--fading');
+          }, 300);
+        });
+      });
+    })();
+
     async function handleSignup(e) {
       e.preventDefault();
-      const form = e.target;
-      const btn = form.querySelector('button[type="submit"]');
-      const input = form.querySelector('input[type="email"]');
-      const email = input.value.trim();
-      const success = document.getElementById('cta-success');
-      const errorEl = document.getElementById('cta-error');
+      var form = e.target;
+      var btn = form.querySelector('button[type="submit"]');
+      var input = form.querySelector('input[type="email"]');
+      var email = input.value.trim();
+      var success = document.getElementById('cta-success');
+      var errorEl = document.getElementById('cta-error');
 
       if (!email) return;
 
-      // Loading state
       btn.disabled = true;
       btn.textContent = 'Joining...';
       if (errorEl) errorEl.style.display = 'none';
 
       try {
-        // POST to Formsubmit.co (works on GitHub Pages and locally)
-        const res = await fetch('https://formsubmit.co/ajax/zach.wallace@protonmail.com', {
+        var res = await fetch('https://formsubmit.co/ajax/zach.wallace@protonmail.com', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
           body: JSON.stringify({
             email: email,
-            _subject: 'Juniper Waitlist Signup',
+            _subject: 'Juniper Friends Waitlist Signup',
             _captcha: 'false',
             _template: 'box',
           }),
@@ -327,13 +522,12 @@
 
         if (!res.ok) throw new Error('Form service error');
 
-        // Also store locally if running on the Juniper dashboard
         if (window.location.port === '8080') {
           fetch('/api/waitlist', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: email }),
-          }).catch(() => {}); // Silent fallback, Formsubmit is primary
+          }).catch(function() {});
         }
 
         form.style.display = 'none';
@@ -342,7 +536,7 @@
         btn.disabled = false;
         btn.textContent = 'Join the Waitlist';
         if (!errorEl) {
-          const p = document.createElement('p');
+          var p = document.createElement('p');
           p.id = 'cta-error';
           p.className = 'cta__error';
           p.textContent = 'Something went wrong. Try again in a moment.';
@@ -354,24 +548,24 @@
     }
 
     // Intersection Observer for fade-in animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
         }
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.card, .step, .chat__msg, .brief__layout').forEach(el => {
+    document.querySelectorAll('.card, .step, .chat__msg, .brief__layout, .privacy__point, .infinity-divider').forEach(function(el) {
       el.classList.add('animate');
       observer.observe(el);
     });
 
     // Smooth scroll for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        var target = document.querySelector(this.getAttribute('href'));
         if (target) {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           document.querySelector('.nav__links').classList.remove('open');
