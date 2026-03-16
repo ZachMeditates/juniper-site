@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juniper &mdash; Never forget to check in on the people you care about</title>
-  <meta name="description" content="Text Juniper about your friends and it remembers everything. Birthdays, life updates, who you haven't talked to in a while. Every week, it tells you who to reach out to and what to say." />
+  <title>Juniper | Personal CRM to Stay in Touch with Friends</title>
+  <meta name="description" content="Juniper is a personal CRM that lives in Telegram. Track friendships, get birthday reminders, and weekly briefs on who to reach out to and what to say. Free during beta." />
   <link rel="canonical" href="https://zachmeditates.github.io/juniper-site/" />
   <meta name="theme-color" content="#22c55e" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Juniper &mdash; Never forget to check in on the people you care about" />
-  <meta property="og:description" content="Text Juniper about your friends and it remembers everything. Every week, it tells you who to reach out to and what to say." />
+  <meta property="og:title" content="Juniper | Personal CRM to Stay in Touch with Friends" />
+  <meta property="og:description" content="Juniper is a personal CRM that lives in Telegram. Track friendships, get birthday reminders, and weekly briefs on who to reach out to." />
   <meta property="og:url" content="https://zachmeditates.github.io/juniper-site/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Juniper" />
@@ -18,8 +18,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Juniper &mdash; Never forget to check in on the people you care about" />
-  <meta name="twitter:description" content="Text Juniper about your friends and it remembers everything. Every week, it tells you who to reach out to and what to say." />
+  <meta name="twitter:title" content="Juniper | Personal CRM to Stay in Touch with Friends" />
+  <meta name="twitter:description" content="Juniper is a personal CRM that lives in Telegram. Track friendships, get birthday reminders, and weekly briefs on who to reach out to." />
   <meta name="twitter:image" content="https://zachmeditates.github.io/juniper-site/og-image.png" />
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -34,7 +34,7 @@
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Juniper",
-    "description": "A personal relationship manager that lives in Telegram. Text naturally about your friends, and Juniper remembers everything. It nudges you when someone is overdue and sends weekly briefs with draft messages.",
+    "description": "A personal CRM and relationship manager that lives in Telegram. Text naturally about your friends, and Juniper remembers everything. It nudges you when someone is overdue and sends weekly briefs with draft messages.",
     "applicationCategory": "LifestyleApplication",
     "operatingSystem": "Web, Telegram",
     "url": "https://zachmeditates.github.io/juniper-site/",
@@ -93,8 +93,88 @@
           "@type": "Answer",
           "text": "Early access is free. When we launch paid plans, you will get notice and can decide then."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a personal CRM?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A personal CRM (customer relationship manager) is a tool for keeping track of the people in your life. Unlike business CRMs built for sales teams, a personal CRM helps you remember birthdays, life updates, and when you last talked to someone. Juniper is a personal CRM designed specifically for friendships."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Juniper compare to Monica, Dex, or Clay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most personal CRMs require you to fill out forms and manually enter data. Juniper is conversational: you text it naturally, like talking to a friend, and it extracts the details automatically. It also lives in Telegram so there is no new app to install, and it generates AI-drafted messages in your weekly brief."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I import contacts from Google Contacts or my phone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Juniper supports importing contacts from Google Contacts CSV exports. You can also add contacts one at a time by texting Juniper naturally, like 'add my friend Sarah Kim, works at Figma, birthday April 22.'"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Juniper work on Android and iPhone?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Since Juniper works through Telegram, it runs on any device where Telegram is available: Android, iPhone, iPad, desktop, and web. The web dashboard also works on any browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I self-host Juniper for free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Juniper offers a free self-hosted option using Docker. You bring your own Anthropic API key and run it on your own server. You get every feature in the hosted plan with full control over your data."
+        }
       }
     ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to use Juniper to stay in touch with friends",
+    "description": "Set up Juniper as your personal friendship manager in three simple steps.",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "position": 1,
+        "name": "Tell Juniper about your life",
+        "text": "Text Juniper naturally in Telegram. No forms or menus. Just say things like 'Had lunch with Marcus, he and Dana are expecting in October' and Juniper extracts the names, details, and context automatically."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 2,
+        "name": "Juniper remembers everything",
+        "text": "Every person gets a living profile with jobs, birthdays, life updates, how you met, and what you talked about. Everything is searchable from the web dashboard."
+      },
+      {
+        "@type": "HowToStep",
+        "position": 3,
+        "name": "Get your weekly brief every Monday",
+        "text": "Your weekly brief tells you who is overdue for a check-in, what to talk about, and even drafts the first message. All you have to do is send it."
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Juniper Friends",
+    "url": "https://zachmeditates.github.io/juniper-site/",
+    "founder": {
+      "@type": "Person",
+      "name": "Zach"
+    }
   }
   </script>
 </head>
@@ -140,7 +220,7 @@
         </div>
         <p class="hero__trust">Free during early access. No spam.</p>
       </div>
-      <div class="hero__phone">
+      <div class="hero__phone" aria-label="Demo of Juniper chat showing a conversation about logging a coffee meetup with a friend">
         <div class="phone-mockup">
           <div class="phone-mockup__notch"></div>
           <div class="phone-mockup__screen">
@@ -278,6 +358,29 @@
   </section>
 
 
+  <!-- INTERACTIVE DEMO -->
+  <section class="demo" id="demo">
+    <div class="container">
+      <div class="section-label">Try It</div>
+      <h2 class="section-title">See how it feels.</h2>
+      <p class="demo__sub">Click a message to see how Juniper responds. No signup needed.</p>
+      <div class="demo__phone">
+        <div class="phone-mockup phone-mockup--demo">
+          <div class="phone-mockup__notch"></div>
+          <div class="phone-mockup__screen">
+            <div class="demo__chat" id="demo-chat"></div>
+            <div class="demo__prompts" id="demo-prompts"></div>
+          </div>
+        </div>
+      </div>
+      <div class="demo__final" id="demo-final">
+        <p>That's Juniper. Ready to try it for real?</p>
+        <a href="#signup" class="btn btn--lg">Get Early Access</a>
+      </div>
+    </div>
+  </section>
+
+
   <!-- TRUST BAR -->
   <section class="trust" id="privacy">
     <div class="container">
@@ -321,24 +424,16 @@
       <div class="section-label">Pricing</div>
       <h2 class="section-title">One plan. No surprises.</h2>
 
-      <div class="pricing__toggle">
-        <span class="pricing__toggle-label pricing__toggle-label--active" data-plan="monthly">Monthly</span>
-        <button class="pricing__toggle-switch" aria-label="Toggle billing period">
-          <span class="pricing__toggle-knob"></span>
-        </button>
-        <span class="pricing__toggle-label" data-plan="yearly">Yearly <span class="pricing__toggle-badge">2 months free</span></span>
-      </div>
-
       <div class="pricing__grid">
 
         <div class="pricing__card pricing__card--primary">
           <div class="pricing__popular">Fully Hosted</div>
           <div class="pricing__price">
-            <span class="pricing__amount" id="pricing-amount">$8</span>
+            <span class="pricing__amount">$8</span>
             <span class="pricing__period">/mo</span>
           </div>
           <p class="pricing__pitch">Everything included, zero setup.</p>
-          <p class="pricing__billed" id="pricing-billed"></p>
+          <p class="pricing__billed"></p>
           <ul class="pricing__features">
             <li>
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -431,6 +526,56 @@
           </div>
         </div>
 
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>What is a personal CRM?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer">
+            <p>A personal CRM (customer relationship manager) is a tool for keeping track of the people in your life. Unlike business CRMs built for sales teams, a personal CRM helps you remember birthdays, life updates, and when you last talked to someone. Juniper is a personal CRM designed specifically for friendships.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>How does Juniper compare to Monica, Dex, or Clay?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer">
+            <p>Most personal CRMs require you to fill out forms and manually enter data. Juniper is conversational: you text it naturally, like talking to a friend, and it extracts the details automatically. It also lives in Telegram so there is no new app to install, and it generates AI-drafted messages in your weekly brief.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Can I import contacts from Google Contacts or my phone?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer">
+            <p>Yes. Juniper supports importing contacts from Google Contacts CSV exports. You can also add contacts one at a time by texting Juniper naturally, like "add my friend Sarah Kim, works at Figma, birthday April 22."</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Does Juniper work on Android and iPhone?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer">
+            <p>Yes. Since Juniper works through Telegram, it runs on any device where Telegram is available: Android, iPhone, iPad, desktop, and web. The web dashboard also works on any browser.</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Can I self-host Juniper for free?</span>
+            <svg class="faq__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq__answer">
+            <p>Yes. Juniper offers a free self-hosted option using Docker. You bring your own Anthropic API key and run it on your own server. You get every feature in the hosted plan with full control over your data.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -454,9 +599,6 @@
   </section>
 
   </main>
-
-  <!-- Easter egg -->
-  <a href="https://www.heavensgate.com/" target="_blank" rel="noopener" class="pi-egg" aria-hidden="true">&pi;</a>
 
   <!-- FOOTER -->
   <footer class="footer">
@@ -568,26 +710,6 @@
       });
     }, { threshold: 0.1 });
 
-    // Pricing toggle
-    (function() {
-      var toggle = document.querySelector('.pricing__toggle-switch');
-      var labels = document.querySelectorAll('.pricing__toggle-label');
-      var amount = document.getElementById('pricing-amount');
-      var billed = document.getElementById('pricing-billed');
-      var isYearly = false;
-
-      if (!toggle) return;
-
-      toggle.addEventListener('click', function() {
-        isYearly = !isYearly;
-        toggle.classList.toggle('pricing__toggle-switch--active', isYearly);
-        labels[0].classList.toggle('pricing__toggle-label--active', !isYearly);
-        labels[1].classList.toggle('pricing__toggle-label--active', isYearly);
-        amount.textContent = isYearly ? '$6' : '$8';
-        billed.textContent = isYearly ? 'Billed yearly at $72' : '';
-      });
-    })();
-
     // FAQ accordion
     document.querySelectorAll('.faq__question').forEach(function(btn) {
       btn.addEventListener('click', function() {
@@ -603,6 +725,104 @@
         }
       });
     });
+
+    // Interactive demo chat simulator
+    (function() {
+      var demoSteps = [
+        {
+          prompt: 'Had coffee with Sarah. She got the promotion!',
+          response: 'Nice! Logged coffee with Sarah. Updated: she got promoted. I\'ll remind you to congratulate her next week.'
+        },
+        {
+          prompt: 'What do I know about Sarah?',
+          response: 'Sarah Kim \u2014 Close friend. Works at Figma. Last seen: coffee today. Life updates: just got promoted. Birthday: April 22. You met at that design conference in 2023.'
+        },
+        {
+          prompt: 'Who haven\'t I talked to in a while?',
+          response: 'Three friends are overdue:\n\u2022 Marcus Chen (12 days, inner circle)\n\u2022 Dana Park (3 weeks, close friend)\n\u2022 Mike Russo (6 weeks, orbit)\nWant me to draft a message for any of them?'
+        },
+        {
+          prompt: 'Draft something for Marcus',
+          response: 'How about: "Hey Marcus, it\'s been a minute. How\'s the new place? We should grab dinner soon, I want to hear how the move went." Want me to adjust the tone?'
+        }
+      ];
+
+      var chatEl = document.getElementById('demo-chat');
+      var promptsEl = document.getElementById('demo-prompts');
+      var finalEl = document.getElementById('demo-final');
+      var currentStep = 0;
+
+      function showPromptButton() {
+        if (currentStep >= demoSteps.length) {
+          finalEl.classList.add('demo__final--visible');
+          return;
+        }
+        var btn = document.createElement('button');
+        btn.className = 'demo__prompt-btn';
+        btn.textContent = demoSteps[currentStep].prompt;
+        btn.addEventListener('click', function() { runStep(currentStep); });
+        promptsEl.innerHTML = '';
+        promptsEl.appendChild(btn);
+      }
+
+      function runStep(stepIndex) {
+        var step = demoSteps[stepIndex];
+        promptsEl.innerHTML = '';
+
+        // Add user message
+        var userMsg = document.createElement('div');
+        userMsg.className = 'chat__msg chat__msg--user';
+        userMsg.innerHTML = '<div class="chat__bubble">' + escapeHtml(step.prompt) + '</div>';
+        chatEl.appendChild(userMsg);
+        scrollChat();
+
+        // Show typing indicator
+        var typing = document.createElement('div');
+        typing.className = 'demo__typing';
+        typing.innerHTML = '<span></span><span></span><span></span>';
+        chatEl.appendChild(typing);
+        scrollChat();
+
+        // Show agent response after delay
+        var delay = 600 + Math.random() * 400;
+        setTimeout(function() {
+          chatEl.removeChild(typing);
+          var agentMsg = document.createElement('div');
+          agentMsg.className = 'chat__msg chat__msg--agent';
+          var responseHtml = escapeHtml(step.response).replace(/\n/g, '<br>');
+          agentMsg.innerHTML = '<div class="chat__name">Juniper</div><div class="chat__bubble">' + responseHtml + '</div>';
+          chatEl.appendChild(agentMsg);
+          scrollChat();
+
+          currentStep++;
+          setTimeout(showPromptButton, 300);
+        }, delay);
+      }
+
+      function scrollChat() {
+        chatEl.scrollTop = chatEl.scrollHeight;
+      }
+
+      function escapeHtml(str) {
+        var div = document.createElement('div');
+        div.appendChild(document.createTextNode(str));
+        return div.innerHTML;
+      }
+
+      // Start demo when section scrolls into view
+      var demoStarted = false;
+      var demoObserver = new IntersectionObserver(function(entries) {
+        if (entries[0].isIntersecting && !demoStarted) {
+          demoStarted = true;
+          showPromptButton();
+        }
+      }, { threshold: 0.3 });
+
+      var demoSection = document.querySelector('.demo');
+      if (demoSection) {
+        demoObserver.observe(demoSection);
+      }
+    })();
 
     // Animate elements on scroll
     document.querySelectorAll('.how__step, .trust__item, .pricing__card, .faq__item, .brief__card').forEach(function(el) {

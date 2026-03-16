@@ -1,0 +1,36 @@
+# Juniper Friends
+
+## What is Juniper?
+Juniper is a personal CRM (customer relationship manager) for friendships.
+It works through Telegram. You text Juniper about your life and it
+remembers everything: birthdays, jobs, life updates, how you met,
+what you talked about. Every Monday, it sends a brief telling you
+who to reach out to and drafts the first message for you.
+
+## Who is it for?
+Busy adults (parents, professionals) who care about their friends
+but struggle to keep track of 50+ relationships.
+
+## How is it different from Monica, Dex, or Clay?
+- Conversational: no forms, no menus. Text like you're talking to a friend.
+- Lives in Telegram: no new app to install.
+- AI-powered briefs: weekly summaries with draft messages.
+- Self-hostable: free forever with your own API key and Docker.
+- Privacy-first: isolated per-user databases, field-level encryption.
+
+## Pricing
+- Fully Hosted: $8/month ($6/month billed yearly)
+- Self-Hosted: Free forever (bring your own Anthropic API key)
+
+## Key Features
+- Natural language interaction logging
+- Smart reminders and birthday alerts
+- Relationship tiers (inner/close/orbit) with overdue nudges
+- Weekly briefs with AI-drafted messages
+- Web dashboard with search
+- Contact import from Google Contacts CSV
+- Field-level encryption, data export (JSON/CSV/vCard)
+
+## Links
+- Website: https://zachmeditates.github.io/juniper-site/
+- Self-hosting: Docker image available
