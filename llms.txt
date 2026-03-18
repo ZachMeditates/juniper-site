@@ -1,8 +1,8 @@
-# Juniper Friends
+# Meadow
 
-## What is Juniper?
-Juniper is a personal CRM (customer relationship manager) for friendships.
-It works through Telegram. You text Juniper about your life and it
+## What is Meadow?
+Meadow is a personal CRM (customer relationship manager) for friendships.
+It works through Telegram. You text Meadow about your life and it
 remembers everything: birthdays, jobs, life updates, how you met,
 what you talked about. Every Monday, it sends a brief telling you
 who to reach out to and drafts the first message for you.
@@ -32,5 +32,5 @@ but struggle to keep track of 50+ relationships.
 - Field-level encryption, data export (JSON/CSV/vCard)
 
 ## Links
-- Website: https://zachmeditates.github.io/juniper-site/
+- Website: https://zachmeditates.github.io/meadow-site/
 - Self-hosting: Docker image available
